@@ -31,6 +31,7 @@ register-eigen-operator:
 	@echo "Registering Operator to EigenLayer"
 	@bin/eigenlayer operator register operator.yaml
 
+.PHONY: register-opacity-node
 register-opacity-node:
 	@go run cli/main.go --config config/fork/opacity.config.yaml register-operator-with-avs
 
