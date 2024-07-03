@@ -33,7 +33,7 @@ register-eigen-operator:
 
 .PHONY: register-opacity-node
 register-opacity-node:
-	@bin/avs-cli --config config/fork/opacity.config.yaml register-operator-with-avs
+	@go run cli/main.go --config config/fork/opacity.config.yaml register-operator-with-avs
 
 
 
